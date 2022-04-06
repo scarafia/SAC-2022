@@ -1,0 +1,18 @@
+# IDEs
+/nbproject/private/
+.idea
+*.iml
+
+# Ant
+/build/
+/dist/
+
+# Maven
+target
+
+# Gradle
+.gradle
+build
+
+# Local Tmp
+.localignore
