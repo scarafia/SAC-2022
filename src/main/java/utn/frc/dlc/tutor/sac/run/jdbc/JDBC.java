@@ -36,6 +36,12 @@ public abstract class JDBC {
           JDBCDirecto.staticRun();
         }
       },
+      new MenuItem("2", "JDBC Con DBManager") {
+        @Override
+        public void execute() {
+          JDBCconDBManager.staticRun();
+        }
+      },
     };
     
     Menu menu = new Menu(sc, ops);
