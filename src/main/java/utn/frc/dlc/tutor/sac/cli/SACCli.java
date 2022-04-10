@@ -9,6 +9,7 @@ import utn.frc.dlc.tutor.sac.run.jdbc.JDBC;
 import java.util.Scanner;
 import utn.frc.dlc.tutor.sac.lib.util.menu.Menu;
 import utn.frc.dlc.tutor.sac.lib.util.menu.MenuItem;
+import utn.frc.dlc.tutor.sac.run.jpa.JPA;
 
 /**
  *
@@ -36,6 +37,12 @@ public class SACCli {
         @Override
         public void execute() {
           JDBC.staticRun(sc);
+        }
+      },
+      new MenuItem("2", "JPA") {
+        @Override
+        public void execute() {
+          JPA.staticRun(sc);
         }
       },
     };
