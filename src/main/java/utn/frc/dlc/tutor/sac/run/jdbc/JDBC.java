@@ -17,8 +17,8 @@ public abstract class JDBC {
   
   // PostgreSQL
   public static final String PG_DRIVER_NAME = "org.postgresql.Driver";
-//  public static final String PG_URL = "jdbc:postgresql://localhost:5432/sacdb";
-  public static final String PG_URL = "jdbc:postgresql://pg96:5432/sacdb";
+  public static final String PG_URL = "jdbc:postgresql://localhost:5432/sacdb";
+//  public static final String PG_URL = "jdbc:postgresql://pg96:5432/sacdb";
   public static final String PG_USR = "sacusr";
   public static final String PG_PWD = "sacpwd";
   

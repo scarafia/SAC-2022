@@ -84,7 +84,7 @@ public abstract class JDBCDirecto {
       System.out.println("---------------------------------");
       System.out.println("Consultando H2 Database Engine...");
       System.out.println("---------------------------------");
-//      h2_dbquery();
+      h2_dbquery();
     } catch (ClassNotFoundException e) {
       System.err.println("No se encontró la clase");
     } catch (Exception e) {
