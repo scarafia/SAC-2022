@@ -1,0 +1,24 @@
+LONG LIVE CLASSIC AND VANILLA JDBC APPROACH !!!
+
+persistence.xml NO debería estar en un proyecto base/librería
+  ==> pero si no se incluye, NO se "optimizan" las clases at build time
+    ==> NO se puede incluir el plugin (si aplica) para optimización/enhancement
+        "at build time" de las clases.
+  ==> otra opción:
+    ==> configurar un "javaagent" "at load time" en proyectos clientes
+
+
+eclipselink:
+  ==> NO cumple la especificación de joined inheritance
+    ==> NO queda otra que modelar:
+            Alumno "contains" Persona
+                    en vez de
+            Alumno "extends" Persona
+
+openjpa:
+  ==> construye subclasses en vez de base classes
+    ==> NO fciona subclassfetchmode=none
+
+
+listados: queries/vistas
+  ==> se necesita modelar 1 clase por c/ listado que se requiera
