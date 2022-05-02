@@ -8,11 +8,12 @@ import javax.enterprise.inject.Produces;
 public class CDITestProducer {
 
     @Produces
+    @ProducedCDITestClass
     public CDITestClass create() {
         return new CDITestClass(25);
     }
 
-    public void destroy(@Disposes CDITestClass test) {
+    public void destroy(@Disposes @ProducedCDITestClass CDITestClass test) {
         // todo: free resouces here
     }
 

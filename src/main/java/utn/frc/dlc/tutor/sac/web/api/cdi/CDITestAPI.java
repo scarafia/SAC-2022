@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 public class CDITestAPI {
 
     @Inject
+    @ProducedCDITestClass
     private CDITestClass test;
 
     @GET

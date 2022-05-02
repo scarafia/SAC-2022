@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.Random;
 
 @Dependent
+@DefaultCDITestClass
 public class CDITestClass implements Serializable {
 
     private final Date created;
