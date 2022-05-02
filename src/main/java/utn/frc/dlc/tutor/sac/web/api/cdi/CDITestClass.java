@@ -1,11 +1,9 @@
 package utn.frc.dlc.tutor.sac.web.api.cdi;
 
-import javax.enterprise.context.Dependent;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Random;
 
-@Dependent
 public class CDITestClass implements Serializable {
 
     private final Date created;
